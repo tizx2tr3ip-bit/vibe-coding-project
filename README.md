@@ -2,6 +2,8 @@
 
 Five browser apps in one repository. Each project is in its own folder.
 
+**[Open the live project gallery](https://tizx2tr3ip-bit.github.io/vibe-coding-project/)**
+
 - [Pocket Ledger](./pocket-ledger) — An expense tracker with categories, totals, and CSV export.
 - [Focus Flow](./focus-flow) — A focused work timer with break cycles and session history.
 - [Task Lanes](./task-lanes) — A simple Kanban board for tracking work from idea to done.
