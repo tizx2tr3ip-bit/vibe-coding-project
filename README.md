@@ -1,13 +1,13 @@
 # Vibe Coding Project
 
-Five browser apps in one repository. Each project is in its own folder.
+Five interactive projects in one repository. [Explore the live collection](https://tizx2tr3ip-bit.github.io/vibe-coding-project/).
 
-**[Open the live project gallery](https://tizx2tr3ip-bit.github.io/vibe-coding-project/)**
+| Project | What it does | Live project |
+| --- | --- | --- |
+| Pocket Ledger | Track expenses and income; export a CSV. | [View](https://tizx2tr3ip-bit.github.io/vibe-coding-project/pocket-ledger/) |
+| Focus Flow | Focus timer with breaks and session count. | [View](https://tizx2tr3ip-bit.github.io/vibe-coding-project/focus-flow/) |
+| Task Lanes | Move tasks through three stages. | [View](https://tizx2tr3ip-bit.github.io/vibe-coding-project/task-lanes/) |
+| Habit Garden | Track habits and daily streaks. | [View](https://tizx2tr3ip-bit.github.io/vibe-coding-project/habit-garden/) |
+| Note Nest | Write, search, and export notes. | [View](https://tizx2tr3ip-bit.github.io/vibe-coding-project/note-nest/) |
 
-- [Pocket Ledger](./pocket-ledger) — An expense tracker with categories, totals, and CSV export.
-- [Focus Flow](./focus-flow) — A focused work timer with break cycles and session history.
-- [Task Lanes](./task-lanes) — A simple Kanban board for tracking work from idea to done.
-- [Habit Garden](./habit-garden) — A daily habit tracker with streaks and a seven-day view.
-- [Note Nest](./note-nest) — A searchable notes app with autosave and export.
-
-Open each project's `index.html` to try it.
+Each project has its own folder and runs in a browser.

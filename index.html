@@ -4,30 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="Five small browser apps for everyday tasks.">
+  <meta name="description" content="Five interactive projects in one collection.">
   <title>Vibe Coding Project</title>
   <style>
     :root{font-family:Inter,system-ui,Arial,sans-serif;color:#eef3ff;background:#0b1020}
     *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 0%,#293f70,transparent 36%),radial-gradient(circle at 92% 70%,#25365a,transparent 35%),#0b1020}
-    main{max-width:1080px;margin:auto;padding:70px 22px 90px}.eyebrow{color:#8fb2ff;text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800}
-    h1{font-size:clamp(2.7rem,8vw,5.5rem);letter-spacing:-.07em;line-height:1;margin:16px 0 24px;max-width:800px}p{color:#b9c5dd;line-height:1.6}.intro{font-size:1.15rem;max-width:620px;margin-bottom:46px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.card{display:flex;flex-direction:column;min-height:230px;padding:25px;border-radius:20px;background:#151e34;border:1px solid #334464;box-shadow:0 18px 45px #0003}
-    .icon{font-size:1.7rem}.card h2{margin:19px 0 7px;font-size:1.45rem}.card p{margin:0 0 23px;flex:1}.button{display:inline-block;align-self:flex-start;padding:11px 17px;border-radius:10px;background:#86a2ff;color:#081021;text-decoration:none;font-weight:800}.button:hover,.button:focus-visible{background:#b2c4ff;outline:2px solid #fff;outline-offset:3px}
-    footer{margin-top:35px;font-size:.9rem}footer a{color:#a9bfff}@media(max-width:600px){main{padding:45px 16px}.card{min-height:210px}}
+    main{max-width:1100px;margin:auto;padding:66px 22px 90px}.eyebrow{color:#8fb2ff;text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800}
+    h1{font-size:clamp(2.7rem,8vw,5.5rem);letter-spacing:-.07em;line-height:1;margin:16px 0 24px;max-width:800px}p{color:#b9c5dd;line-height:1.6}.intro{font-size:1.15rem;max-width:640px;margin-bottom:38px}
+    .table-wrap{overflow-x:auto;border:1px solid #344665;border-radius:18px;background:#151e34;box-shadow:0 18px 45px #0003}table{width:100%;border-collapse:collapse;text-align:left}th{padding:18px 22px;background:#1c2944;color:#a8bfff;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase}td{padding:21px 22px;border-top:1px solid #344665;vertical-align:middle}tbody tr:hover{background:#1b2944}.number{color:#91a7d4;font-weight:800;white-space:nowrap}.project{font-size:1.16rem;font-weight:800;white-space:nowrap}.description{color:#bfcae1;min-width:290px}.button{display:inline-block;padding:10px 15px;border-radius:9px;background:#86a2ff;color:#081021;text-decoration:none;font-weight:800;white-space:nowrap}.button:hover,.button:focus-visible{background:#b2c4ff;outline:2px solid #fff;outline-offset:3px}
+    footer{margin-top:30px;font-size:.9rem}footer a{color:#a9bfff}@media(max-width:700px){main{padding:44px 15px}th,td{padding:15px}.description{min-width:210px}}
   </style>
 </head>
 <body>
   <main>
-    <div class="eyebrow">Five small browser apps</div>
+    <div class="eyebrow">Project collection · 05</div>
     <h1>Vibe Coding Project</h1>
-    <p class="intro">Pick an app and try it right here. Your notes, tasks, habits, and transactions stay in your browser.</p>
-    <section class="grid" aria-label="Projects">
-      <article class="card"><span class="icon" aria-hidden="true">💸</span><h2>Pocket Ledger</h2><p>Track income and expenses, see your balance, and export a CSV.</p><a class="button" href="./pocket-ledger/">Open app →</a></article>
-      <article class="card"><span class="icon" aria-hidden="true">⏱️</span><h2>Focus Flow</h2><p>Work in focused sessions with short breaks and a session count.</p><a class="button" href="./focus-flow/">Open app →</a></article>
-      <article class="card"><span class="icon" aria-hidden="true">📋</span><h2>Task Lanes</h2><p>Move tasks from to do, to doing, to done.</p><a class="button" href="./task-lanes/">Open app →</a></article>
-      <article class="card"><span class="icon" aria-hidden="true">🌱</span><h2>Habit Garden</h2><p>Mark daily habits and watch your streaks grow.</p><a class="button" href="./habit-garden/">Open app →</a></article>
-      <article class="card"><span class="icon" aria-hidden="true">📝</span><h2>Note Nest</h2><p>Write, search, and export notes with automatic local saving.</p><a class="button" href="./note-nest/">Open app →</a></article>
-    </section>
+    <p class="intro">Explore five interactive projects. Select a row to open the project directly in your browser.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">No.</th><th scope="col">Project</th><th scope="col">What it does</th><th scope="col">Link</th></tr></thead>
+        <tbody>
+          <tr><td class="number">01</td><td class="project">Pocket Ledger</td><td class="description">Track income and expenses, view your balance, and export a CSV.</td><td><a class="button" href="./pocket-ledger/">View project →</a></td></tr>
+          <tr><td class="number">02</td><td class="project">Focus Flow</td><td class="description">Use a focus timer with breaks and a completed-session count.</td><td><a class="button" href="./focus-flow/">View project →</a></td></tr>
+          <tr><td class="number">03</td><td class="project">Task Lanes</td><td class="description">Organize tasks across to do, doing, and done.</td><td><a class="button" href="./task-lanes/">View project →</a></td></tr>
+          <tr><td class="number">04</td><td class="project">Habit Garden</td><td class="description">Track daily habits and view your streaks.</td><td><a class="button" href="./habit-garden/">View project →</a></td></tr>
+          <tr><td class="number">05</td><td class="project">Note Nest</td><td class="description">Write, search, save, and export notes.</td><td><a class="button" href="./note-nest/">View project →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
     <footer>Explore the <a href="https://github.com/tizx2tr3ip-bit/vibe-coding-project">source code on GitHub</a>.</footer>
   </main>
 </body>

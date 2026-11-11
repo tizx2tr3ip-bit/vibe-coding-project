@@ -1,6 +1,6 @@
 # Note Nest
 
-A searchable notes app with autosave and export.
+A searchable notes project with autosave and export.
 
 ## Features
 
