@@ -1,0 +1,22 @@
+import http from 'node:http';import {readFile} from 'node:fs/promises';import {fileURLToPath} from 'node:url';import path from 'node:path';
+const root=fileURLToPath(new URL('.',import.meta.url));const types={'.html':'text/html; charset=utf-8','.css':'text/css','.mjs':'text/javascript','.json':'application/json','.md':'text/plain'};
+export function createServer({upstream='http://127.0.0.1:11434',fetchImpl=fetch}={}){
+  return http.createServer(async(req,res)=>{const reply=(status,body)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(JSON.stringify(body));};
+    try{const expected=`http://${req.headers.host}`;if(!/^127\.0\.0\.1:\d+$/.test(req.headers.host||'')&&!/^localhost:\d+$/.test(req.headers.host||'')){reply(403,{error:'Use the loopback address printed by the server.'});return;}if(req.headers.origin&&req.headers.origin!==expected){reply(403,{error:'Cross-origin requests are not allowed.'});return;}
+      const url=new URL(req.url,expected);
+      if(url.pathname==='/api/status'&&req.method==='GET'){reply(200,{local:true,provider:'Ollama',version:1});return;}
+      const route={'/api/models':'/api/tags','/api/embed':'/api/embed','/api/chat':'/api/chat'}[url.pathname];
+      if(route){if(url.pathname==='/api/models'&&req.method!=='GET'||url.pathname!=='/api/models'&&req.method!=='POST'){reply(405,{error:'Unsupported method.'});return;}let body;
+        if(req.method==='POST'){if(req.headers.origin!==expected||!req.headers['content-type']?.startsWith('application/json')){reply(403,{error:'Use the local EvidenceAI interface to submit JSON requests.'});return;}let raw='';for await(const b of req){raw+=b;if(raw.length>1500000){reply(413,{error:'Request is too large.'});return;}}try{body=JSON.parse(raw);}catch{reply(400,{error:'Invalid JSON request.'});return;}if(!body||typeof body.model!=='string'||body.model.length>150){reply(400,{error:'Choose a valid installed model.'});return;}if(body.model.includes('cloud')){reply(400,{error:'Use a locally installed model, not a cloud model.'});return;}
+          if(route==='/api/embed'){if(!Array.isArray(body.input)||body.input.length>100||!body.input.every(s=>typeof s==='string'&&s.length<=5000)){reply(400,{error:'Embedding batches must contain up to 100 text passages.'});return;}body={model:body.model,input:body.input,truncate:false};}
+          else{if(!Array.isArray(body.messages)||body.messages.length>3||!body.messages.every(m=>['system','user'].includes(m.role)&&typeof m.content==='string'&&m.content.length<100000)){reply(400,{error:'Invalid chat request.'});return;}body={model:body.model,messages:body.messages,format:body.format,stream:false,options:{temperature:0,num_ctx:8192,num_predict:1800}};}
+        }
+        const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),route==="/api/tags"?5000:180000);res.on('close',()=>{if(!res.writableEnded)controller.abort();});try{const response=await fetchImpl(upstream+route,{method:req.method,headers:body?{'Content-Type':'application/json'}:undefined,body:body?JSON.stringify(body):undefined,signal:controller.signal});const data=await response.json();if(!response.ok){reply(response.status,{error:data.error||'The local model request failed.'});return;}reply(200,data);}catch(e){reply(503,{error:e.name==='AbortError'?'The model timed out or the request was cancelled. Try a smaller model.':'Cannot reach Ollama at 127.0.0.1:11434. Start Ollama and install a local model, then reconnect.'});}finally{clearTimeout(timer);}return;
+      }
+      if(url.pathname.startsWith('/api/')){reply(404,{error:'Unknown API route.'});return;}
+      if(req.method!=='GET'&&req.method!=='HEAD'){reply(405,{error:'Unsupported method.'});return;}
+      const relative=decodeURIComponent(url.pathname).replace(/^\/+/, '')||'index.html';const file=path.resolve(root,relative);if(!file.startsWith(root)||relative.split(/[\\/]/).some(p=>p.startsWith('.'))){reply(403,{error:'Path not allowed.'});return;}const data=await readFile(file);res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(req.method==='HEAD'?undefined:data);
+    }catch{reply(404,{error:'File not found.'});}
+  });
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))createServer().listen(4174,'127.0.0.1',()=>console.log('EvidenceAI: http://127.0.0.1:4174'));

@@ -2,14 +2,14 @@
 
 A portfolio rebuild: useful creative and business tools, with dedicated AI, cybersecurity, and advanced analytics projects. Developed one at a time.
 
-**1 project implemented, 19 planned.** The previous 25 projects have been retired; their source remains in Git history.
+**2 projects implemented, 18 planned.** The previous 25 projects have been retired; their source remains in Git history.
 
 [Open the collection](https://tizx2tr3ip-bit.github.io/vibe-coding-project/)
 
 | Project | Field | Status |
 | --- | --- | --- |
 | [IncidentGraph](incidentgraph/) | Security investigation | [Live v1](https://tizx2tr3ip-bit.github.io/vibe-coding-project/incidentgraph/) · [Download](https://tizx2tr3ip-bit.github.io/vibe-coding-project/downloads/incidentgraph.zip) |
-| EvidenceAI | AI research | Planned |
+| [EvidenceAI](evidenceai/) | AI research | [Live v1](https://tizx2tr3ip-bit.github.io/vibe-coding-project/evidenceai/) · [Download](https://tizx2tr3ip-bit.github.io/vibe-coding-project/downloads/evidenceai.zip) |
 | ForecastForge | Predictive analytics | Planned |
 | ModelArena | AI evaluation | Planned |
 | VisionBench | Computer vision | Planned |
@@ -32,3 +32,5 @@ A portfolio rebuild: useful creative and business tools, with dedicated AI, cybe
 IncidentGraph runs locally without dependencies or paid services. See its README for setup, supported input formats, detection methods, tests, and limitations.
 
 [Roadmap and resume notes](ROADMAP.md)
+
+EvidenceAI provides browser-based evidence search and an optional local Ollama workflow for generated answers and hybrid retrieval. Its README covers model setup, citation checks, notebook exports, tests, and limitations.

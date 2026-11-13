@@ -5,7 +5,7 @@ Free local projects, public sample-data demonstrations, one repository. Each pro
 | Project | Field | Status |
 | --- | --- | --- |
 | IncidentGraph | Security investigation | Implemented v1; ready for user review |
-| EvidenceAI | Document retrieval and cited AI answers | Planned |
+| EvidenceAI | Document retrieval and cited AI answers | Implemented v1; real local model verified |
 | ForecastForge | Predictive analytics | Planned |
 | ModelArena | AI evaluation | Planned |
 | VisionBench | Computer vision | Planned |
@@ -30,3 +30,5 @@ Free local projects, public sample-data demonstrations, one repository. Each pro
 The previous 25 projects were rejected by the owner and are being replaced. They remain recoverable through Git history; they are not part of the new portfolio. Do not restore them or duplicate a shared visual template.
 
 IncidentGraph uses no dependencies or external services. Run `node incidentgraph/server.mjs`; tests: `node --test incidentgraph/tests/core.test.mjs`. First obtain user feedback on the actual project before starting the next. Continue improving functional depth, usability, and honest technical documentation; do not label planned features as implemented.
+
+EvidenceAI uses dependency-free Node and optional Ollama models. Run `node evidenceai/server.mjs`; tests: `node --test evidenceai/tests/*.test.mjs`. Public Pages runs lexical evidence search; local mode provides chat and embeddings. Complete EvidenceAI review before starting ForecastForge.
