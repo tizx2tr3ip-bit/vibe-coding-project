@@ -1,0 +1,686 @@
+[
+  {
+    "timestamp": "2026-10-14T08:00:00.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:01:24.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:02:48.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:04:12.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:05:36.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:07:00.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:08:24.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:09:48.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:11:12.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "failure",
+    "details": "Password mistyped; subsequent login succeeded."
+  },
+  {
+    "timestamp": "2026-10-14T08:12:36.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:14:00.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:15:24.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:16:48.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:18:12.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:19:36.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:21:00.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:22:00.000Z",
+    "action": "login",
+    "user": "admin",
+    "source": "203.0.113.42",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Authentication rejected: invalid credentials."
+  },
+  {
+    "timestamp": "2026-10-14T08:22:24.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:22:27.000Z",
+    "action": "login",
+    "user": "svc.backup",
+    "source": "203.0.113.42",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Authentication rejected: invalid credentials."
+  },
+  {
+    "timestamp": "2026-10-14T08:22:54.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "203.0.113.42",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Authentication rejected: invalid credentials."
+  },
+  {
+    "timestamp": "2026-10-14T08:23:21.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "203.0.113.42",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Authentication rejected: invalid credentials."
+  },
+  {
+    "timestamp": "2026-10-14T08:23:48.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:23:48.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Authentication rejected: invalid credentials."
+  },
+  {
+    "timestamp": "2026-10-14T08:24:15.000Z",
+    "action": "login",
+    "user": "root",
+    "source": "203.0.113.42",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Authentication rejected: invalid credentials."
+  },
+  {
+    "timestamp": "2026-10-14T08:25:12.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:26:36.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:28:00.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:28:00.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:28:39.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:29:18.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:29:24.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:29:57.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:30:36.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:30:48.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:31:15.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:31:54.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "failure",
+    "details": "SSH password authentication failed."
+  },
+  {
+    "timestamp": "2026-10-14T08:32:12.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:33:00.000Z",
+    "action": "login",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "success",
+    "details": "SSH session accepted. Session: ssh-8842."
+  },
+  {
+    "timestamp": "2026-10-14T08:33:36.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:35:00.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:36:00.000Z",
+    "action": "privilege_change",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "success",
+    "details": "Account added to deployment-admins. Change ticket: absent."
+  },
+  {
+    "timestamp": "2026-10-14T08:36:24.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:37:48.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "failure",
+    "details": "Password mistyped; subsequent login succeeded."
+  },
+  {
+    "timestamp": "2026-10-14T08:38:00.000Z",
+    "action": "file_access",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "success",
+    "details": "Read /srv/releases/config.env. File content is not recorded."
+  },
+  {
+    "timestamp": "2026-10-14T08:39:12.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:40:36.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:42:00.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:43:00.000Z",
+    "action": "session_end",
+    "user": "ops.deploy",
+    "source": "203.0.113.42",
+    "host": "build-runner-02",
+    "outcome": "success",
+    "details": "Session ssh-8842 closed."
+  },
+  {
+    "timestamp": "2026-10-14T08:43:24.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:44:48.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:46:12.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:47:36.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:49:00.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:50:24.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:51:48.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:53:00.000Z",
+    "action": "privilege_change",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Approved role update. Change ticket: CHG-2041."
+  },
+  {
+    "timestamp": "2026-10-14T08:53:12.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:54:36.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:56:00.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:57:24.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T08:58:48.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:00:12.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:01:36.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:03:00.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:04:24.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:05:48.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:07:12.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:08:36.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:10:00.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:11:24.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:12:48.000Z",
+    "action": "login",
+    "user": "l.park",
+    "source": "10.24.1.24",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:14:12.000Z",
+    "action": "login",
+    "user": "n.ali",
+    "source": "10.24.1.25",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:15:36.000Z",
+    "action": "login",
+    "user": "m.chen",
+    "source": "10.24.1.20",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:17:00.000Z",
+    "action": "login",
+    "user": "a.patel",
+    "source": "10.24.1.21",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:18:24.000Z",
+    "action": "login",
+    "user": "s.morgan",
+    "source": "10.24.1.22",
+    "host": "workspace-01",
+    "outcome": "success",
+    "details": "Routine employee session."
+  },
+  {
+    "timestamp": "2026-10-14T09:19:48.000Z",
+    "action": "login",
+    "user": "j.rivera",
+    "source": "10.24.1.23",
+    "host": "vpn-gateway",
+    "outcome": "success",
+    "details": "Routine employee session."
+  }
+]
