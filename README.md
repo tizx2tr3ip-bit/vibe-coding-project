@@ -2,7 +2,7 @@
 
 A portfolio rebuild: useful creative and business tools, with dedicated AI, cybersecurity, and advanced analytics projects. Developed one at a time.
 
-**3 projects implemented, 17 planned.** The previous 25 projects have been retired; their source remains in Git history.
+**4 projects implemented, 16 planned.** The previous 25 projects have been retired; their source remains in Git history.
 
 [Open the collection](https://tizx2tr3ip-bit.github.io/vibe-coding-project/)
 
@@ -11,7 +11,7 @@ A portfolio rebuild: useful creative and business tools, with dedicated AI, cybe
 | [IncidentGraph](incidentgraph/) | Security investigation | [Live v1](https://tizx2tr3ip-bit.github.io/vibe-coding-project/incidentgraph/) · [Download](https://tizx2tr3ip-bit.github.io/vibe-coding-project/downloads/incidentgraph.zip) |
 | [EvidenceAI](evidenceai/) | AI research | [Live v1](https://tizx2tr3ip-bit.github.io/vibe-coding-project/evidenceai/) · [Download](https://tizx2tr3ip-bit.github.io/vibe-coding-project/downloads/evidenceai.zip) |
 | [ForecastForge](forecastforge/) | Predictive analytics | [Live v1](https://tizx2tr3ip-bit.github.io/vibe-coding-project/forecastforge/) · [Download](downloads/forecastforge.zip) |
-| ModelArena | AI evaluation | Planned |
+| [ModelArena](modelarena/) | AI evaluation | [Live v1](https://tizx2tr3ip-bit.github.io/vibe-coding-project/modelarena/) · [Download](downloads/modelarena.zip) |
 | VisionBench | Computer vision | Planned |
 | SignalWatch | Anomaly detection | Planned |
 | ThreatCanvas | Security architecture | Planned |
