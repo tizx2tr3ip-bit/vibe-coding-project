@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseCSV,predict,analyze,sampleCSV,exportCSV} from '../core.mjs';
+test('sample parses and forecast dates continue daily',()=>{const rows=parseCSV(sampleCSV()),r=analyze(rows);assert.equal(rows.length,84);assert.equal(r.future.length,14);assert.equal(Date.parse(r.future[0].date)-rows.at(-1).stamp,86400000);});
+test('linear trend extrapolates exact line',()=>assert.deepEqual(predict([2,4,6,8],3,'trend'),[10,12,14]));
+test('seasonal repeats full observed cycle',()=>assert.deepEqual(predict([1,3,2,1,3,2],5,'seasonal',3),[1,3,2,1,3]));
+test('naive and recent mean use intended history',()=>{assert.deepEqual(predict([1,2,3],2,'naive'),[3,3]);assert.deepEqual(predict([99,1,2,3,4,5,6,7],1,'mean'),[4]);});
+test('holdout has no future leakage',()=>{const rows=parseCSV(sampleCSV());rows.forEach((r,i)=>r.value=i<68?10:100);const r=analyze(rows);const n=r.scores.find(s=>s.method==='naive');assert.equal(r.holdout,16);assert.equal(n.mae,90);assert.equal(n.rmse,90);assert.ok(n.predictions.every(v=>v===10));});
+test('scenario is separate and export has one row per future date',()=>{const r=analyze(parseCSV(sampleCSV()),{scenario:25});assert.equal(r.future[0].scenario,r.future[0].value*1.25);assert.equal(exportCSV(r).split('\n').length,15);});
+test('constant zero data stays finite',()=>{const rows=parseCSV(sampleCSV());rows.forEach(r=>r.value=0);const r=analyze(rows);assert.equal(r.selected.mae,0);assert.ok(r.future.every(r=>r.value===0));});
+test('rejects malformed, duplicate, unsorted, irregular and impossible dates',()=>{const csv=sampleCSV();for(const bad of [csv.replace('date,value','x,y'),csv.replace('2026-08-02','2026-08-01'),csv.replace('2026-08-02','2026-02-30'),csv.replace('2026-08-02','2026-07-31'),csv.replace(/2026-08-02[^\n]+\n/,''),csv.replace(/,120\.00/,',NaN')])assert.throws(()=>parseCSV(bad));});
+test('validates settings and seasonal sample requirements',()=>{const rows=parseCSV(sampleCSV());for(const settings of [{horizon:0},{horizon:91},{season:1},{scenario:Infinity},{method:'seasonal',season:100}])assert.throws(()=>analyze(rows,settings));});
+test('minimum data omits unavailable seasonal model',()=>{const r=analyze(parseCSV(sampleCSV().split('\n').slice(0,13).join('\n')));assert.equal(r.scores.length,3);});
